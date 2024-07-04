@@ -1,0 +1,36 @@
+<html lang="fr">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Toutes les recettes | TDM</title>
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<script src="js/menuxml.js"></script>
+	<script src="js/menuxsl.js"></script>
+	
+	<script src="js/pagexml.js"></script>
+	<script src="js/pagexsl.js"></script>
+	
+	<script src="js/xslttransform.js"></script>
+	<script>
+		function loadXslt(){
+			insertXsl(menuxml, menuxsldiv, 'menu');
+			insertXsl(recettexml, recettexsldiv, 'recette');
+		}
+	</script>
+</head>
+<body onload="loadXslt()">
+	<h1 class="page"><font class="initiale"><i>T</i></font>résors 
+					 <font class="initiale"><i>D</i></font>u 
+					 <font class="initiale"><i>M</i></font>onde
+	</h1>
+	
+	<h2 class="page">Toutes les recettes</h2>
+	
+	<div id="menu"></div>
+	
+	<div style="clear:both;"/>
+	
+	<div id="recette"></div>
+	
+</body>
+</html>

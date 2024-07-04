@@ -1,0 +1,68 @@
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title>À propos | TDM</title>
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<script src="js/menuxml.js"></script>
+	<script src="js/menuxsl.js"></script>
+	<script src="js/xslttransform.js"></script>
+	<script>
+		function loadXslt(){
+			insertXsl(menuxml, menuxsldiv, 'menu');
+		}
+	</script>
+</head>
+<body onload="loadXslt()">
+	<h1 class="page"><font class="initiale"><i>T</i></font>résors 
+					 <font class="initiale"><i>D</i></font>u 
+					 <font class="initiale"><i>M</i></font>onde
+	</h1>
+	
+	<h2 class="page">À propos</h2>
+	
+	<div id="menu"></div>
+	
+	<div style="clear:both;"/>
+	
+	<ul type="1" class="apropos">
+		<li>Accueil</li>
+			<div class="apropos">Pour l'acceuil, j'ai seulemnt écrit un titre <strong>h1</strong> en mettant une lettrine et un sous-titre <strong>h2</strong>.
+			J'ai égalment mis un menu en xml avec pour id "menu".
+			J'ai ajouté deux balises <strong>div</strong> : une pour arrêter le flottement du menu et une autre pour mettre de l'espace entre le titre et le menu.
+			</div>
+		
+		<li>Menu</li>
+			<div class="apropos"> J'ai fait le menu en xml/xsl : menuxml.js et menuxsl.js. Dans les balises <strong>item</strong>, j'ai écrit les pages principales du site. Dans les balises <strong>item genre="autre"</strong>, j'ai écrit les pages principales qui ont des sous-pages. Ces sous-pages sont écrites dans les balises <strong>choix</strong>. J'ai mis les liens dans la balise <strong>lien</strong> pour chaque page. J'ai construit le menu à l'aide des balises <strong>ul</strong> et <strong>li</strong>. J'ai ajouté l'attribut <strong>xsl:sort</strong> dans la page menuxsl.js pour mettre les choix dans l'ordre alphabétique. L'apparence du menu a été faite dans la feuille de style.</div>
+		
+		<li>Toutes les recettes / Mes recettes préférées / Origines</li>
+			<div class="apropos">Pour les titres, j'ai rétréci le titre du site <strong>h1</strong> pour mettre en avant le titre <strong>h2</strong> que j'ai aggrandi.</div>
+			<div class="apropos">J'ai fait ces trois pages en xml/xsl : pagexml.js et pagexsl.js.</div>
+			<div class="apropos">Pour les recettes, il y a deux types de balise : <strong>plat</strong> et <strong>plat genre="pref"</strong>. Ainsi j'ai pu différencier les recettes de la page <i>Toutes les recettes</i> et de la page <i>Mes recettes préférées</i>. J'ai mis les plats notés dans la balise <strong>plat genre="pref"</strong> dans la page <i>Mes recettes préférées</i> à l'aide de la balise <strong>xsl:if test</strong>. Sur la page xsl, j'ai fait apparaître dans la balise <strong>div.photo</strong> les images et les noms de plats. J'ai mis un lien pour chaque plat sur les images et le nom des plats. Dans la page style.css, la balise <strong>div.photo</strong> m'a permis d'ajusté le placement des images, notamment grâce à l'attribut <strong>float</strong>.</div>
+			<div class="apropos">J'ai fait la même chose pour la page Origines : seul le nom des balises change.</div>
+			<div class="apropos">J'ai ajouté l'attribut <strong>xsl:sort</strong> dans la page pagexsl.js pour mettre les plats et les pays dans l'ordre alphabétique.</div>
+			<div class="apropos">Le nom de la page change grâce à la balise <strong>title</strong>.</div>
+		
+		<li>Accras de morue / Bibimbap / Crêpe / Firni / Ròu Mántou / Samoussa / Soba / Syrniki / Tave kosi / Xoşav</li>
+			<div class="apropos">Pour les titres, j'ai rétréci le titre du site <strong>h1</strong> pour mettre en avant le titre <strong>h2</strong> que j'ai aggrandi.</div>		
+			<div class="apropos">J'ai aligné quatre images flottantes sous le menu à l'aide de la balise <strong>img avec la classe recette</strong>. Dans la page de style, j'ai ajusté la taille de l'image et le flottement à gauche. J'ai ajouté aux images l'option <strong>alt</strong> où j'ai écrit le nom du plat.</div>
+			<div class="apropos">J'ai ensuite mis deux <strong>div flottantes</strong> : une pour les ingrédiens et une pour la recette. Pour les deux <strong>div</strong> j'ai fait des listes avec les balises <strong>ul</strong> et <strong>li</strong>. Pour les ingrédiens, j'ai fait une liste en point et pour les recettes, une liste chiffrée. Pour la police d'écriture, j'ai gardé celle du body : c'est-à-dire arial noir 16px.</div>
+			<div class="apropos">J'ai mis une balise <strong>div.decouvrir</strong> en bas de la page avec un lien pour accéder au pays d'origine du plat.</div> 
+			<div class="apropos">Le nom de la page change grâce à la balise <strong>title</strong>.</div>
+		
+		<li>Afghanistan / Albanie / Bretagne / Chine / Corée du Sud / Guadeloupe / Inde / Japon / Kurdistan / Russie</li>
+			<div class="apropos">Pour les titres, j'ai rétréci le titre du site <strong>h1</strong> pour mettre en avant le titre <strong>h2</strong> que j'ai aggrandi.</div>
+			<div class="apropos">Pour la page sur les pays, j'ai utilisé la même balise <strong>img.recette</strong> utilisée pour les recettes. J'ai ajouté aux images l'attribut <strong>alt</strong> où j'ai écrit le nom des lieux correspondant à l'image. Pour la présentation, dans la balise <strong>div.pays</strong>, j'ai mis un style pour la première lettre du paragraphe avec la balise <strong>font classe maj</strong> et j'ai centré le texte.  J'ai intégré une vidéo touristique dans la balise <strong>div.pays</strong> pour qu'elle soit aussi centrée.</div>
+			<div class="apropos">J'ai mis une balise <strong>div.decouvrir</strong> en bas de la page avec un lien pour accéder à la recette du pays en  question.</div> 
+			<div class="apropos">Le nom de la page change grâce à la balise <strong>title</strong>.</div>
+		
+		<li>Allergènes</li>
+			<div class="apropos">Pour le titre, j'ai rétréci le titre du site <strong>h1</strong> pour mettre en avant le titre <strong>h2</strong> Allergènes que j'ai aggrandi.</div>		
+			<div class="apropos">J'ai fait un tableau d'allergènes avec les balises <strong>table</strong>, <strong>tr</strong>, <strong>td</strong> et <strong>th</strong>. J'ai ajouté un espace sous le menu avec l'attribut <strong>margin</strong>. J'ai changé la forme du tableau avec les attributs <strong>border</strong>, pour épaissir les bords du tableau, et <strong>border-collapse</strong>, pour avoir des lignes simples. J'ai ajouté l'attribut <strong>tr:hover</strong> dans la feuille de style pour mieux visualiser les allergènes contenus dans le plats concerné lorsque l'on passe la souris dessus.</div>
+			<div class="apropos">Le nom de la page change grâce à la balise <strong>title</strong>.</div>
+	<ul>
+		
+	
+	
+	</body>
+</html>

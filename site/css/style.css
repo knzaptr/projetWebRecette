@@ -1,0 +1,161 @@
+body, html {
+	font: 16px arial;
+	color: black;
+	background-color: #fffefe;
+	margin:0px;
+	padding:0px;
+}
+h1.index {
+	font:75px Times New Roman;
+	color: #c38e48;
+	text-align: center;
+}
+h2.index {
+	font: 55px Times New Roman;
+	font-style: italic;
+	color: #bf9153;
+	text-align: center;
+}
+font.lettrine{
+	font: 130px Edwardian Script ITC, cursive;
+	color:#c9211e;
+}
+h1.page {
+	font:25px Times New Roman;
+	color: #c38e48;
+	text-align: center;
+}
+h2.page {
+	font: 45px Times New Roman;
+	font-style: italic;
+	color: #bf9153;
+	text-align: center;
+}
+font.initiale{
+	font: 50px Edwardian Script ITC, cursive;
+	color:#c9211e;
+}
+h3 {
+	font: 25px arial;
+	color: #E6A271;
+	text-align: center;
+}
+font.maj{
+	color:#bf9153;
+	font: 60px Edwardian Script ITC, cursive;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+div.photo {
+	float: left;
+	padding: 40px;
+	margin: 20px;	
+}
+img{
+	width: 320px;
+	height: 250px;
+}
+img.recette{
+	padding-top:40px;
+	margin-top:20px;
+	margin-bottom: 40px;
+	margin-left: 10px;
+	float: left;
+}
+div div a {
+	font: 20px arial;
+	color: #DD985C;
+	}
+div.recette {
+	float: left;
+	margin: 30px;
+}
+div.pays {
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+}
+ul.menu, ul.menu ul {
+	list-style-type: none;
+	background-color:#c9211e;
+	color:white;
+}
+ul.menu a, ul.menu ul a {
+	color:white;
+	size:50px;
+}
+ul.menu > li {
+	float:left;
+	padding-left:20px;
+	width:180px;
+	background-color:#c9211e;
+	display:block;
+	margin-top:7px;
+	text-align:center;
+} 
+ul.menu li > ul{
+	display: none;
+	position: absolute;
+	padding: 5px;
+	padding-top: 8px;
+	width:180px;
+	text-align:left;
+} 
+ul.menu li:hover > ul{
+	display: block;
+} 
+div#menu{
+	background-color:#c9211e;
+	height:30px;
+	padding-top:0px;
+} 
+td{
+	text-align: center;
+}
+tr:hover{
+	background-color: #f9eddc;
+}
+th{
+	padding:7px;
+}
+table {
+	margin:60px;
+	border-collapse: collapse;
+	border: 3px solid #e5c495;
+}
+th, td{
+	border: 2px solid #e5c495;
+}
+img[alt] {
+	font: 13px arial;
+	color: black;
+}
+div.decouvrir {
+	padding: 50px;
+	text-align: center;
+}
+div.decouvrir a {
+	font: 22px arial;
+	color:#c89057;
+}
+ul.apropos > li {
+	font:25px Times New Roman;
+	color: #c38e48;
+	text-align: center;
+} 
+
+ul.apropos{
+	list-style-position: inside;
+}
+div.apropos {
+	padding-right:60px;
+	padding-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: justify;
+	
+}
