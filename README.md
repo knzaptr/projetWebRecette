@@ -19,4 +19,4 @@ Ce site web est un projet de licence dédié à partager des recettes et l'origi
 
 1. Clonez le repository:
    ```bash
-   git clone https://github.com/knzaptr/Web_Project.git/site_recette
+   git clone https://github.com/knzaptr/projetWebRecette
