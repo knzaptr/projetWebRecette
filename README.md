@@ -4,7 +4,7 @@ Ce site web est un projet de licence dédié à partager des recettes et l'origi
 
 ## Fonctionnalités
 
-- **Interface Utilisateur Simple**: Utilisation d'HTML, CSS et JavaScript
+- **Interface Utilisateur Simple**: Utilisation d'HTML, CSS
 - **Styling CSS**: Utilisation de CSS pour le stylisme des pages et l'amélioration de l'esthétique.
 - **XSL/XML**: Utilisation de XSLT pour transformer des données XML en pages HTML statiques.
 
@@ -12,7 +12,6 @@ Ce site web est un projet de licence dédié à partager des recettes et l'origi
 
 - **HTML5**: Structure de base du site web.
 - **CSS3**: Mise en forme et stylisme des pages.
-- **JavaScript**: Ajout d'interactivité et de fonctionnalités dynamiques.
 - **XSLT**: Transformation des données XML en HTML.
 
 ## Installation et Utilisation
